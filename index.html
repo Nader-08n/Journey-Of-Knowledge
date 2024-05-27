@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رحلة المعرفة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Talent Day Logo" width="200">
+        <h1>برمجة+تصميم رقمي</h1>
+        <button onclick="toggleSubSections('programming')">Programming</button>
+        <div id="programmingSubSections" style="display: none;">
+            <button onclick="playVideo('python')">Python</button>
+            <button onclick="playVideo('java')">Java</button>
+            <button onclick="playVideo('javascript')">JavaScript</button>
+            <button onclick="playVideo('HTML')">HTML</button>
+            <button onclick="playVideo('CSS')">CSS</button>
+        </div>
+        <button onclick="toggleSubSections('design')">Digital Design</button>
+        <div id="designSubSections" style="display: none;">
+            <select id="designPrograms">
+                <option value="illustrator">Illustrator</option>
+                <option value="photoshop">Photoshop</option>
+                <option value="aftereffects">After Effects</option>
+                <option value="premiere">Premiere</option>
+                <option value="GIMP">GIMP</option>
+                <option value="capcut">Cap Cut</option>
+            </select>
+            <button onclick="playDesignVideo()">Play Video</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
